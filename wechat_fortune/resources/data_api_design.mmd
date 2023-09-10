@@ -1,0 +1,23 @@
+classDiagram
+    class User{
+        +str wechat_id
+        +str name
+        +str birth_date
+        +list history
+        +__init__(wechat_id: str, name: str, birth_date: str)
+        +get_history()
+        +add_to_history(prediction: str)
+    }
+    class Prediction{
+        +str date
+        +str prediction
+        +__init__(date: str, prediction: str)
+    }
+    class Notification{
+        +str wechat_id
+        +str message
+        +__init__(wechat_id: str, message: str)
+        +send()
+    }
+    User "1" -- "*" Prediction: has
+    User "1" -- "*" Notification: receives

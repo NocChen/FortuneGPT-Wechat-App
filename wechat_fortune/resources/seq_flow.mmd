@@ -1,0 +1,13 @@
+sequenceDiagram
+    participant M as Main
+    participant U as User
+    participant P as Prediction
+    participant N as Notification
+    M->>U: create user
+    U->>M: return user
+    M->>P: create prediction
+    P->>M: return prediction
+    M->>U: add prediction to user history
+    M->>N: create notification
+    N->>M: send notification
+    M->>U: update user

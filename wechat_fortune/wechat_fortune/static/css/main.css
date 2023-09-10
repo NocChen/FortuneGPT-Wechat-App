@@ -1,0 +1,67 @@
+## static/css/main.css
+"""
+/* Reset default browser styles and set global styles */
+body, h1, form, button, input {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    padding: 50px;
+}
+
+/* Style the main app container */
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Style the heading */
+h1 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the form and its elements */
+form {
+    margin-bottom: 20px;
+}
+
+input[type="date"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+}
+
+/* Style the buttons */
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+/* Style the prediction result */
+#predictionResult {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+"""

@@ -1,0 +1,25 @@
+## templates/index.html
+"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeChat Fortune</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div id="app">
+        <h1>Welcome to WeChat Fortune</h1>
+        <form id="predictionForm">
+            <label for="date">Enter a date:</label>
+            <input type="date" id="date" name="date" aria-label="Enter a date for prediction">
+            <button type="submit" aria-label="Get prediction for entered date">Get Prediction</button>
+        </form>
+        <div id="predictionResult" aria-live="polite"></div>
+        <button id="shareButton" aria-label="Share prediction">Share Prediction</button>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
+"""
